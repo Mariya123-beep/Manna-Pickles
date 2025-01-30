@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manna Pickles - Home Made Pickles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9; /* Light gray background */
+            color: #333; /* Dark text for readability */
+            overflow-x: hidden;
+        }
+
+        .header {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url('header.jpg'), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); /* Background image with transparency */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+
+        .logo {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the circular area properly */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+     h1 {
+    font-size: 3.5rem;
+    margin-top: 20px;
+ background: rgba(0, 0, 0, 0.5);
+    color: white;     font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+p {
+    font-size: 1.4rem;
+    color: #f4e1c1; /* Light cream color for the subheading */
+    margin-top: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: #E74C3C; /* Light red when hovered for an attractive effect */
+}
+
+
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #E74C3C; /* Light warm red background */
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 16px 30px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            margin: 0 10px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background: #C0392B; /* Darker red on hover */
+            transform: scale(1.1);
+        }
+
+        .description {
+            padding: 60px 30px;
+            background: #fff; /* White background */
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .description h2 {
+            font-size: 2.8rem;
+            color: #E74C3C; /* Light red color */
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .description p {
+            font-size: 1.3rem;
+            color: #555;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container {
+            padding: 50px;
+            text-align: center;
+   	    background-image: url('header.jpg'), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); /* Background image with transparency */
+
+        }
+
+        .category {
+            margin-top: 40px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .category h2 {
+            font-size: 2.5rem;
+            color: #E74C3C; /* Light red color */
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .product {
+            display: inline-block;
+            margin: 15px;
+            padding: 20px;
+            width: 240px;
+            border-radius: 12px;
+            background: #f9f9f9; /* Light gray background */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .product img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .product h3 {
+            font-size: 1.6rem;
+            color: #333;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .product p {
+            font-size: 1.1rem;
+            color: #777;
+            margin: 15px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background: #E74C3C; /* Light warm red background */
+            color: white;
+            margin-top: 60px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="C:\Users\EMI MARIYA\Documents\MannaWebsite\logome.jpeg" alt="Manna Pickles Logo" class="logo">
+        <h1>Welcome to Manna Pickles</h1>
+        <p>Delicious home-made pickles with authentic taste</p>
+    </div>
+
+    <div class="description">
+        <h2>Discover the authentic taste of tradition with Manna Pickles!</h2>
+        <p>Our homemade pickles are crafted with love, using handpicked ingredients and time-tested recipes. Bursting with bold flavors and a perfect balance of spices, each jar promises a delicious, tangy experience. Perfect for elevating any meal or enjoying on their own, Manna Pickles are a true taste of home in every bite!</p>
+    </div>
+
+    <div class="navbar">
+        <a href="vegetarian.html">Vegetarian</a>
+        <a href="nonvegetarian.html">Non-Vegetarian</a>
+        <a href="feedback.html">Feedback</a>
+    </div>
+
+    <div class="container">
+        <div class="category">
+            <h2>Our Pickles</h2>
+            <div class="product">
+                <img src="C:\Users\EMI MARIYA\Documents\MannaWebsite\mango-pickle.jpg" alt="Mango Pickle">
+                <h3>Mango Pickle</h3>
+                <p>Spicy & tangy, a perfect companion for any meal.</p>
+            </div>
+            <div class="product">
+                <img src="C:\Users\EMI MARIYA\Documents\MannaWebsite\naranga-1.jpg" alt="Lemon Pickle">
+                <h3>Lemon Pickle</h3>
+                <p>Zesty lemon pickle with a perfect balance of spice.</p>
+            </div>
+            <div class="product">
+                <img src="C:\Users\EMI MARIYA\Documents\MannaWebsite\mixed pickle.jpg" alt="Mixed Pickle">
+                <h3>Mixed Pickle</h3>
+                <p>Blend of flavors that will excite your taste buds.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Manna Pickles. All Rights Reserved.</p>
+        <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a>
+    </div>
+</body>
+</html>

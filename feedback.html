@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Manna Pickles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('header.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #E74C3C;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 16px 30px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            margin: 0 10px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background: #C0392B;
+            transform: scale(1.1);
+        }
+
+        .container {
+            padding: 50px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .stars input {
+            display: none;
+        }
+
+        .stars label {
+            font-size: 30px;
+            color: gray;
+            cursor: pointer;
+        }
+
+        .stars input:checked ~ label {
+            color: gold;
+        }
+
+        button {
+            background: #E74C3C;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #C0392B;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background: #E74C3C;
+            color: white;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Feedback</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="MANNA PICKLES WEBSITE.html">Home</a>
+        <a href="vegetarian.html">Vegetarian</a>
+        <a href="nonvegetarian.html">Non-Vegetarian</a>
+        <a href="feedback.html">Feedback</a>
+    </div>
+    
+    <div class="container">
+        <div class="form-container">
+            <h2>We value your feedback!</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="feedback" rows="4" placeholder="Your Feedback" required></textarea>
+                <div class="stars">
+                    <input type="radio" name="rating" id="star5" value="5">
+                    <label for="star5">★</label>
+                    <input type="radio" name="rating" id="star4" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" name="rating" id="star3" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" name="rating" id="star2" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" name="rating" id="star1" value="1">
+                    <label for="star1">★</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 Manna Pickles. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
